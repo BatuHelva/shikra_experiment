@@ -25,16 +25,16 @@ DEFAULT_TEST_POPE_VARIANT = dict(
     #     filename='{{fileDirname}}/../../../data/coco_pope_popular.jsonl',
     #     template_file=r'{{fileDirname}}/template/VQA_BCoT.json'
     # ),
-    # COCO_POPE_ADVERSARIAL_q_a=dict(
-    #     **POPE_TEST_COMMON_CFG,
-    #     filename='{{fileDirname}}/../../../data/coco_pope_adversarial.jsonl',
-    #     template_file=r'{{fileDirname}}/template/VQA.json'
-    # ),
-    COCO_POPE_ADVERSARIAL_q_bca=dict(
-         **POPE_TEST_COMMON_CFG,
-         filename='{{fileDirname}}/../../../data/coco_pope_adversarial.jsonl',
-         template_file=r'{{fileDirname}}/template/VQA_BCoT.json'
-     ),
+    COCO_POPE_ADVERSARIAL_q_a=dict(
+        **POPE_TEST_COMMON_CFG,
+        filename='{{fileDirname}}/../../../data/coco_pope_adversarial.jsonl',
+        template_file=r'{{fileDirname}}/template/VQA.json'
+    ),
+    # COCO_POPE_ADVERSARIAL_q_bca=dict(
+    #      **POPE_TEST_COMMON_CFG,
+    #      filename='{{fileDirname}}/../../../data/coco_pope_adversarial.jsonl',
+    #      template_file=r'{{fileDirname}}/template/VQA_BCoT.json'
+    #  ),
 )
 
 # names = ['COCO_POPE_RANDOM', 'COCO_POPE_POPULAR', 'COCO_POPE_ADVERSARIAL']
