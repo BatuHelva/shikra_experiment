@@ -1,3 +1,5 @@
+import os
+
 from ..root import (
     DATASETS,
     QUESTION_PLACEHOLDER,
@@ -13,6 +15,7 @@ class POPEVQADataset(MInstrDataset):
 
     def __getitem__(self, index):
         item = self.get_raw_item(index)
+
         image = self.get_image(image_path=item['image'])
 
         question = item['text']
