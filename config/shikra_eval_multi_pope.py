@@ -5,7 +5,7 @@ training_args = dict(
 
     do_train=False,
     do_eval=False,
-    do_predict=False,
+    do_predict=True,
     do_multi_predict=False,
 
     fp16=False,
