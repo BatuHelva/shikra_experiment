@@ -16,4 +16,5 @@ source activate shikra
 
 cd $HOME/shikra_experiment
 
-srun python mllm/models/shikra/apply_delta.py --base ./llama-7b/ --target ./shikra-7b --delta ./shikras-7b/shikra-7b-delta-v1
+srun
+accelerate launch --num_processes 4 --main_process_port 23786 mllm/pipeline/finetune.py config/shikra_eval_multi_pope.py
