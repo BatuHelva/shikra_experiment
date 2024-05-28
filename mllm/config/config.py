@@ -25,7 +25,7 @@ logging.basicConfig(
 @dataclass
 @add_start_docstrings(HFSeq2SeqTrainingArguments.__doc__)
 class Seq2SeqTrainingArguments(HFSeq2SeqTrainingArguments):
-    do_multi_predict: bool = field(default=True, metadata={"help": "Whether to run predictions on the multi-test set."})
+    do_multi_predict: bool = field(default=False, metadata={"help": "Whether to run predictions on the multi-test set."})
 
 
 def prepare_args(args=None):
