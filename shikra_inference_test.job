@@ -16,5 +16,4 @@ source activate shikra
 
 cd $HOME/shikra_experiment
 
-srun
-accelerate launch --num_processes 4 --main_process_port 23786 mllm/pipeline/finetune.py config/shikra_eval_multi_pope.py
+srun accelerate launch --num_processes 4 --main_process_port 23786 mllm/pipeline/finetune.py config/shikra_eval_multi_pope.py
