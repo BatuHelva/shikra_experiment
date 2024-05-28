@@ -41,6 +41,7 @@ def main():
     collator_kwargs = cfg.data_args.collator_kwargs
     trainer_cls, data_collator_dict = prepare_trainer_collator(cfg.model_args, preprocessor, collator_kwargs)
     dataset, compute_metrics = prepare_data(cfg.data_args, cfg.model_args, training_args, preprocessor)
+    print("\n")
     print(cfg.data_args)
     print(cfg)
     print(dataset)
