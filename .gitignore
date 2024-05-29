@@ -1,2 +1,18 @@
 
 /.idea
+/datasets/coco/val2014
+/llama-7b
+/mllm/__pycache__
+/mllm/config/__pycache__
+/mllm/conversation/__pycache__
+/mllm/dataset/__pycache__
+/mllm/dataset/process_function/__pycache__
+/mllm/dataset/single_image_dataset/__pycache__
+/mllm/dataset/utils/__pycache__
+/mllm/engine/__pycache__
+/mllm/models/__pycache__
+/mllm/models/builder/__pycache__
+/mllm/models/shikra/__pycache__
+/mllm/utils/__pycache__
+/shikra-7b
+/shikras-7b
