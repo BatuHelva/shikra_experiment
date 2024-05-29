@@ -22,7 +22,8 @@ class POPEVQADataset(MInstrDataset):
         final_question = self.get_template().replace(QUESTION_PLACEHOLDER, question)
 
         label = str(item['label']).lower()
-
+        label = ""
+        
         ret = {
             'image': image,
             'conversations': [
