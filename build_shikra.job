@@ -17,4 +17,6 @@ source activate shikra
 
 cd $HOME/shikra_experiment
 
+pip3 install torch torchvision torchaudio
+
 srun python mllm/models/shikra/apply_delta.py --base ./llama-7b/ --target ./shikra-7b --delta ./shikras-7b/shikra-7b-delta-v1
